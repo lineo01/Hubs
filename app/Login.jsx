@@ -38,8 +38,8 @@ const Login_Page = () => {
       }
     }
   return (
-    <View style={{flex:1,justifyContent:"center",alignItems:"center",flexDirection:"column"}}>
-      <Text style={{alignSelf:'center'}}>Login_Page</Text>
+    <View style={{flex:1,justifyContent:"center",alignItems:"center",flexDirection:"column",backgroundColor:"#44cb00"}}>
+      <Text style={{alignSelf:'center'}}>Login_Page Here </Text>
       <TextInput onChangeText={setemail} placeholder='Enter Email'></TextInput>
       <TextInput onChangeText={setpassword} placeholder='Enter Password'></TextInput>
       <TouchableOpacity onPress={()=>{console.log( email+password);
