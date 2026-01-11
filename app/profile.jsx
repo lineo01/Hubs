@@ -1,4 +1,4 @@
-import { View, Text ,Image,StyleSheet,TouchableOpacity} from 'react-native'
+import { View, Text ,Image,StyleSheet,TouchableOpacity, ScrollView} from 'react-native'
 import React from 'react'
 import { useState } from 'react';
 import Feather from '@expo/vector-icons/Feather';
@@ -31,7 +31,7 @@ const pickFile = async () => {
     const[card_description,setDescription]=useState("Description");
   
   return (
-    <View style={styles.Profile}>
+    <ScrollView style={styles.Profile}>
       <Image source={require("../assets/images/icon.png")} style={{height:100,width:100,borderRadius:100,justifyContent:'center',}}></Image>
       <Text>{Profile_Name}</Text>
 
@@ -52,7 +52,7 @@ const pickFile = async () => {
           />
         )}
       </View>
-    </View>
+    </ScrollView>
     
   )
 }
